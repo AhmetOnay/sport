@@ -1,0 +1,52 @@
+{
+  "soccer": [
+    {
+      "name": "Messi",
+      "height": 170,
+      "weight": 72,
+      "birthday": "2020-04-16",
+      "salary": 22800000,
+      "id": 1
+    },
+    {
+      "name": "Cristiano Ronaldo",
+      "height": "187",
+      "weight": 2,
+      "birthday": 35,
+      "salary": 31000000,
+      "id": 2
+    },
+    {
+      "name": "Ahmet",
+      "height": "185",
+      "weight": "90",
+      "birthday": "2000-02-19",
+      "salary": "2000000",
+      "id": 3
+    },
+    {
+      "name": "Ferro",
+      "height": "178",
+      "weight": "70",
+      "birthday": "2020-04-16",
+      "salary": "2222222",
+      "id": 5
+    },
+    {
+      "name": "Daniel",
+      "height": "177",
+      "weight": "88",
+      "birthday": "1999-05-12",
+      "salary": "125000",
+      "id": 6
+    },
+    {
+      "name": "asd",
+      "height": "12",
+      "weight": "512",
+      "birthday": "1998-12-12",
+      "salary": "4564",
+      "id": 7
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+<div class="container wrapper">
+  <div class="row">
+    <!-- Soccer table -->
+    <div class="col-md-12">
+      <div class="inner">
+        <h3>Soccer List</h3>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Name</th>
+              <th scope="col">Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let soccer of SoccerList" (click)="selectSoccer(soccer)">
+              <th scope="row">{{ soccer.id }}</th>
+              <td>{{ soccer.name }}</td>
+              <td>
+                <button
+                  type="button"
+                  class="btn btn-primary btn-sm"
+                  [routerLink]="['/detailsoccer/', soccer.id]"
+                >
+                  Details
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-success btn-sm"
+                  [routerLink]="['/editsoccer/', soccer.id]"
+                >
+                  Edit
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-danger btn-sm"
+                  (click)="deleteSoccer(soccer)"
+                >
+                  Remove
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <button
+                  type="button"
+                  class="btn btn-success btn-sm"
+                  [routerLink]="['/addsoccer/']"
+                >
+                  Add Soccer
+                </button>
+      </div>
+      
+      <div *ngIf="selectedSoccer?.id != null">
+        <app-edit-soccer
+          [id2]="selectedSoccer?.id"
+          (soccerModified)="onSoccerModified($event)"
+        ></app-edit-soccer
+        >Selected id{{ selectedSoccer?.id }}
+      </div>
+    </div>
+  </div>
+</div>
+

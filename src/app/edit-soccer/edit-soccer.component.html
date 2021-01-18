@@ -1,0 +1,60 @@
+<div class="container wrapper wrapper2">
+  <div class="row">
+    <!-- Form -->
+    <div class="col-md-12">
+      <h3>Edit Soccer Player</h3>
+      <form [formGroup]="updateSoccerForm" (ngSubmit)="submitForm()" novalidate>
+        <div class="form-group">
+          <label>Name</label>
+          <input
+            type="text"
+            formControlName="name"
+            class="form-control"
+            maxlength="20"
+          />
+        </div>
+        <div class="form-group">
+          <label>Height</label>
+          <input
+            type="text"
+            formControlName="height"
+            class="form-control"
+            maxlength="20"
+            type="number"
+          />
+        </div>
+        <div class="form-group">
+          <label>Weight</label>
+          <input
+            type="text"
+            formControlName="weight"
+            class="form-control"
+            maxlength="20"
+            type="number"
+          />
+        </div>
+        <div class="form-group">
+          <label>Birthday</label>
+          <input
+            type="text"
+            formControlName="birthday"
+            class="form-control"
+            maxlength="20"
+            type="date"
+          />
+          <div class="form-group">
+            <label>Salary</label>
+            <input
+              type="text"
+              formControlName="salary"
+              class="form-control"
+              maxlength="20"
+              type="number"
+            />
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Update</button>
+      </form>
+    </div>
+  </div>
+</div>
